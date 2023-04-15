@@ -1,0 +1,386 @@
+/* start basic */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --colorone:#83764d;
+  --colortwo:#fcc961;
+  --grid:repeat( auto-fill , minmax(250px,1fr));
+}
+
+body {
+  font-family: graphikarapic;
+  direction: rtl;
+}
+
+.continer {
+  margin: auto;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  .continer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .continer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .continer {
+    width: 1170px;
+  }
+}
+
+@font-face {
+  font-family: graphikarapic;
+  src: url("../font/Graphik\ Arabic\ SemiBold.ttf");
+}
+/* end basic */
+/* start head  */
+
+.head {
+  padding: 10px 0;
+}
+.head .continer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+.help {
+  display: flex;
+}
+.help p {
+  margin-left: 30px;
+}
+.help p i {
+  margin-left: 10px;
+}
+
+.social {
+  display: flex;
+}
+.social .icon {
+  margin-left: 20px;
+
+  position: relative;
+}
+.social .icon::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  margin-right: 10px;
+  padding-top: 45px;
+  border: solid 0.25vmin var(--colortwo);
+}
+.social .icon i {
+  padding: 5px;
+  margin-top: -5px;
+  border: solid .25vmin black ;
+  border-radius: 5px;
+color: #62460d;
+}
+.social p i{
+  margin-right: 10px;
+}
+/* end head  */
+/* start part landing */
+.landing{
+  position: relative;
+  overflow: hidden;
+}
+.landing img{
+   width: 100%;
+  height: 100vh;
+transform:scalex(1.3);
+z-index: -1;
+}
+.links{
+  width: 100%;
+position: absolute;
+left: 1px;
+top: 0px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+}
+.links .menu{
+
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+position: relative;
+left: 1%;
+top: 20px;
+cursor: pointer;
+}
+.landing .links .logo img{
+width: 80px;
+height: 80px;
+background-repeat: no-repeat;
+background-size: contain;
+margin-top: 40px;
+}
+.links li a{
+text-decoration: none;
+color: white;
+}
+
+.links ul{
+  display: flex;
+  margin-right: 90px;
+  list-style: none;
+  color: white;
+}
+
+.links ul li{
+  margin-left: 20px;
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0,-20%);
+}
+.title button{
+  background: transparent;
+  border: solid 3px var(--colorone);
+  border-radius: 5px;
+  color: var(--colorone);
+padding: 5px;
+font-size: 25px;
+font-weight: bold;
+transition-delay: .7s;
+}
+.title button:hover{
+ border: none;
+ color: white;
+ background: linear-gradient(70deg,var(--colorone),var(--colortwo)) ; 
+
+}
+.title h2{
+  text-align: center;
+  font-weight:bolder;
+}
+.title h2 span{
+  display: block;
+  font-size: 40px;
+  padding: 10px;
+  color: var(--colorone);
+}
+.title h2{
+font-size: 40px;
+color: var(--colortwo);
+
+}
+/* end part landing */
+/* start part information */
+.info{
+width: 100%;
+}
+.info .continer{
+  display: flex;
+flex-direction: row-reverse;
+width: 90%;
+}
+
+.info .image img{
+  width: 110vmin;
+  height: 80vh;
+position: relative;
+}
+.info .textinfo h3{
+  position: relative;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.info .textinfo h3::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom:  -10px;
+  padding: 1px;
+  width: 40px;
+  background-color: var(--colortwo);
+}
+.info .textinfo p{
+  font-size: 14px;
+  line-height: 25px;
+}
+.info .textinfo p span{
+  color: var(--colortwo);
+}
+.info .textinfo  ul{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+}
+.info .textinfo  ul li{
+margin-right: 40px;
+list-style: none;
+position: relative;
+}
+.info .textinfo  ul li::after{
+  font-family: "Font Awesome 6 free";
+  content: "\f00c";
+position: absolute;
+font-weight: 900;
+font-size: 10px;
+right: -22px;
+top: 4px;
+color: white;
+background-color: var(--colortwo);
+border-radius: 50%;
+padding: 2px;
+}
+/* end part information */
+/* start part service */
+.service{
+margin: 60px 0;
+
+}
+.service .continer{
+display: grid;
+grid-template-columns: var(--grid);
+gap: 10px;
+direction: ltr;
+
+}
+.service .continer div img{
+  width: 280px;
+  height: 320px;
+  border-radius: 30px;
+}
+.service .continer >.text {
+  text-align: right;
+  margin-top: 40%;
+  width: 80%;
+position: relative;
+bottom: 20px;
+left: 25px;
+}
+.service .continer >.text h1{
+position: relative;
+bottom: 20px;
+color: var(--colortwo);
+}
+.service .continer >.text p{
+font-size: 15px;
+line-height: 25px;
+}
+.service .continer > .background {
+position: relative;
+left: 50%;
+transform: translate(-45%);
+}
+.service .continer > .background::before{
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(0deg ,var(--colortwo) ,transparent);
+  border-radius: 30px;
+  filter: opacity(1);
+  width: 280px;
+  height: 320px;
+  z-index: 1;
+}
+.service .continer > div .textsrv{
+text-align: right;
+width: 80%;
+  position: absolute;
+  right: 20%;
+  bottom:  40px;
+  z-index: 2;
+}
+.service .continer > div .textsrv h2{
+color: #263e7e;
+margin-bottom: 10px;
+}
+.service .continer > div .textsrv p{
+
+color: white;
+line-height: 25px;
+font-size: 17px;
+}
+
+/* end part service */
+/* start part the end  */
+.the_end{
+  background-color: #263e7e;
+  color: white;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  padding: 30px;
+}
+.the_end .logo{
+padding: 20px 0;
+}
+.the_end .logo img{
+width: 90px;
+height: 70px;
+}
+.the_end .end_info{
+  display: grid;
+grid-template-columns: var(--grid);
+gap: 60px;
+}
+.the_end .end_info .text{
+ color: white;
+ font-size: 15px;
+ line-height: 25px;
+ word-spacing: 3px;
+}
+.the_end .end_info .help{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.the_end .end_info .help span{
+display: block;
+color: #7f95c7;
+margin-bottom: 10px;
+}
+.the_end .end_info .help button{
+margin-top: 10px;
+height: 40px;
+font-size: 13px;
+background-color: var(--colortwo);
+color: white;
+border: transparent;
+font-weight: bolder;
+border-radius: 10px;
+}
+.the_end .end_info .contact {
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+}
+.the_end .end_info .contact i{
+  padding: 10px;
+  font-size: 25px;
+  background-color: var(--colortwo);
+clip-path: polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%); 
+margin-left: 10px;
+}
+.up{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+padding: 5px 15px;
+
+font-size: 25px;
+  background-color: red;
+  text-align: center;
+  color: white;background-color: #263e7e;
+  border-radius: 50%;
+}
+/* end part the end  */
+/* YASOO task_1 */

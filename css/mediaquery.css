@@ -1,0 +1,242 @@
+@media (min-width: 900px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 1300px) {
+  .info .continer img{
+   width: 100vmin;
+  }
+}
+@media (max-width: 1200px) {
+  .info .continer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: 996px) {
+  .service .continer .background img {
+    width: 350px;
+    height: 320px;
+  }
+  .service .continer > .background {
+    position: relative;
+  }
+  .service .continer > .background::before {
+    content: "";
+    width: 350px;
+    height: 320px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 920px) {
+  /* start part head  */
+
+  .head {
+    padding: 10px 0;
+  }
+  .head .continer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+  }
+  .help {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+  .help p {
+    margin-left: 30px;
+  }
+  .help p i {
+    margin-left: 10px;
+  }
+
+  .social {
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+}
+  .social .icon {
+    margin-left: 20px;
+    position: relative;
+  }
+  .social .icon::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    margin-right: 10px;
+    padding-top: 45px;
+    border: solid 0.25vmin var(--colortwo);
+    display: none;
+  }
+  .social .icon i {
+    padding: 5px;
+    margin-top: -5px;
+    border: solid 0.15vmin black;
+    border-radius: 5px;
+    color: #62460d;
+  }
+   .social p  {
+    margin-right: -20px;
+  }
+  .social p i {
+    margin-right: 10px;
+  }
+  /* end head  */
+  /* start part landing */
+  .landing {
+    position: relative;
+    overflow: hidden;
+  }
+  /* end part head  */
+  /* start part links  */
+  .menu {
+    display: block;
+    margin-right: 100px;
+  }
+
+  .links ul {
+    display: none;
+    position: absolute;
+    left: 180px;
+    top: 40px;
+    background-color: rgb(18, 46, 72);
+    border-radius: 20px;
+  }
+
+  .links ul.test2 {
+    display: block;
+  }
+  .links .menu.test::after {
+    content: "";
+    position: absolute;
+    right: -31px;
+    top: -2px;
+    border: solid 17px;
+    border-color: transparent rgb(18, 46, 72) transparent transparent;
+  }
+  .links ul li {
+    padding: 10px;
+  }
+  /* end part linkks */
+  /* start part landing */
+  .landing img {
+    width: 100%;
+    height: 93vh;
+    transform: scalex(2.5);
+    z-index: -1;
+  }
+  .landing .links .logo img {
+    width: 40px;
+    height: 60px;
+  }
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  /* end part landing */
+  /* start part landing */
+  .info .continer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .info .image img {
+    width: 90vmin;
+    height: 50vh;
+  }
+
+  .info ul li{
+margin-left: -10px;
+}
+  /* end part info */
+  /* start part service  */
+  .service .continer .background img {
+    width: 300px;
+    height: 320px;
+  }
+  .service .continer > .background {
+    position: relative;
+  }
+  .service .continer > .background::before {
+    content: "";
+
+    width: 300px;
+    height: 320px;
+    z-index: 1;
+  }
+  /* end part service  */
+}
+@media (max-width: 650px) {
+  .service .continer .background img {
+    width: 250px;
+    height: 320px;
+  }
+  .service .continer > .text {
+    width: 250px;
+  }
+  .service .continer > .background {
+    position: relative;
+  }
+  .service .continer > .background::before {
+    content: "";
+
+    width: 250px;
+    height: 320px;
+    z-index: 1;
+  }
+}
+@media (max-width: 550px) {
+  .links ul {
+    display: none;
+    position: absolute;
+    left: 120px;
+    top: 40px;
+    background-color: rgb(18, 46, 72);
+    border-radius: 20px;
+  }
+  .service .continer {
+    display: flex;
+flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+    margin-right: 10%;
+  }
+  .service .continer > .text {
+    width: 220px;
+    margin-top: 80px;
+    margin-left: 100px;
+    /* display: none; */
+  }
+  .service .continer .background img {
+    width: 280px;
+    height: 320px;
+  }
+  .service .continer > .background {
+    position: relative;
+  }
+  .service .continer > .background::before {
+    content: "";
+    width: 280px;
+    height: 320px;
+  }
+}
+@media (max-width: 540px) {
+  .service {
+    margin-right: 10%;
+  }
+}
+
+
+
+/* YASOO task_1 */
